@@ -42,8 +42,11 @@ try
     {
         const fileRes=path.join(folderFinal,`myCv0.${ele.originalname.split(".")[1]}`);
         fs.writeFileSync(fileRes,ele.buffer);
+        console.log("all is run now");
+        console.log("uploaded successfully server now");
     })
     }
+    
     return res.json({
         success:true,
         message:'the files is uploaded successfully',
